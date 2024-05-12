@@ -56,3 +56,21 @@ body {
     color: #2d3436;
     transition: 0.2s ease-out;
 }
+
+.main article[data-status="next_slid"] {
+    transform: translateX(100%);
+    transition: 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.main article[data-status="last_slid"] {
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
+    z-index: 4;
+}
+
+.main article[data-status="current_slid"] {
+    transform: translateX(0);
+    transition: 0.3s ease-in-out;
+    z-index: 6;
+}
